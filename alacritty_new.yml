@@ -337,7 +337,7 @@ selection:
   #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
 
   # When set to `true`, selected text will be copied to the primary clipboard.
-  save_to_clipboard: true
+  save_to_clipboard: false
 
 #cursor:
   # Cursor style
@@ -391,8 +391,8 @@ live_config_reload: true
 #   - (macOS) /bin/bash --login
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
-#shell:
-  #program: /bin/fish
+shell:
+  program: /usr/bin/fish
   #args:
     #- --login
 
@@ -425,7 +425,7 @@ mouse:
   #triple_click: { threshold: 300 }
 
   # If this is `true`, the cursor is temporarily hidden when typing.
-  hide_when_typing: true
+  #hide_when_typing: false
 
   url:
     # URL launcher
@@ -680,7 +680,7 @@ mouse:
 #
 # If the same trigger is assigned to multiple actions, all of them are executed
 # in the order they were defined in.
-key_bindings:
+#key_bindings:
   #- { key: Paste,                                       action: Paste          }
   #- { key: Copy,                                        action: Copy           }
   #- { key: L,         mods: Control,                    action: ClearLogNotice }
@@ -809,10 +809,3 @@ key_bindings:
 
   # Print all received window events.
   #print_events: false
-
-
-#-------------------------------------------------------------------------------
-# ALACRITTY THEME SWITCHER BELOW HERE
-#-------------------------------------------------------------------------------
-
-
